@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+
+    <FrameLayout
+        android:id="@+id/gameFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg2"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score : 0"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_light"
+            android:paddingVertical="14dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:background="#3C3939">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/human"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/human_right"
+            android:layout_gravity="bottom"
+            android:visibility="invisible">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/covid19"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/covid19"
+            android:visibility="invisible">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/soap"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/cosco_soap"
+            android:visibility="invisible">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/sanitizer"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sanitizer"
+            android:visibility="invisible">
+
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/entry"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/highScoreLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="High Score: 300"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:onClick="startGame"
+                android:text="START"
+                android:textColor="@android:color/holo_red_dark">
+
+            </Button>
+
+            <Button
+                android:id="@+id/aboutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="About Game"
+                android:textColor="@android:color/holo_red_dark">
+
+            </Button>
+
+            <Button
+                android:id="@+id/symptomsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Symptoms"
+                android:layout_marginTop="50dp"
+                android:textColor="@android:color/holo_red_dark">
+
+            </Button>
+
+            <Button
+                android:id="@+id/wayOutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Way Out"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="@android:color/holo_red_dark">
+
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="quitGame"
+                android:text="Quit"
+                android:textColor="@android:color/holo_red_dark">
+
+            </Button>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
